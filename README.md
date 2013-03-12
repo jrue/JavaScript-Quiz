@@ -5,7 +5,9 @@ A simple quiz template written in js/jquery and is responsively designed.
 
 In the future, I will add a generator to add questions, etc.
 
-To use, open the file in a text editor like [TextMate (Mac)](http://macromates.com/) or [Notepad++ (PC)](http://notepad-plus-plus.org/) and edit the data at the top of the document.
+To use, open the file in a plain text editor such as [TextMate (Mac)](http://macromates.com/) or [Notepad++ (PC)](http://notepad-plus-plus.org/) or any other text editor and edit the data at the top of the document.
+
+Use the quiz.html or to save space, you can use the minified version which compresses the non-editable code.
 
 ```javascript
 var quiz = [
