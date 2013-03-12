@@ -68,7 +68,7 @@
 
 
     /******* No need to edit below this line *********/
-    var currentquestion = 0, score = 0, picked;
+    var currentquestion = 0, score = 0, submt=true, picked;
 
     jQuery(document).ready(function($){
 
@@ -98,6 +98,7 @@
          * Resets all of the fields to prepare for next question
          */
         function nextQuestion(){
+            submt = true;
             $('#explanation').empty();
             $('#question').text(quiz[currentquestion]['question']);
             $('#pager').text('Question ' + Number(currentquestion + 1) + ' of ' + quiz.length);
@@ -153,11 +154,14 @@
                 picked = $(this).attr('data-index');
                 $('.choice').removeAttr('style').off('mouseout mouseover');
                 $(this).css({'border-color':'#222','font-weight':700,'background-color':'#c1c1c1'});
-                $('#submitbutton').css({'color':'#000'}).on('click', function(){
-                    $('.choice').off('click');
-                    $(this).off('click');
-                    processQuestion(picked);
-                })
+                if(submt){
+                    submt=false;
+                    $('#submitbutton').css({'color':'#000'}).on('click', function(){
+                        $('.choice').off('click');
+                        $(this).off('click');
+                        processQuestion(picked);
+                    });
+                }
             })
         }
         
