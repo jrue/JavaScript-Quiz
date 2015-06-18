@@ -20,7 +20,7 @@ var quiz = [
                                 "Albert Einstein",
                                 "Ralph Waldo Emmerson"
                             ],
-        "correct"       :   "Albert Einstein",
+        "correct"       :   "2",
         "explanation"   :   "Albert Einstein drafted the special theory of relativity in 1905.",
     },
     {
@@ -32,7 +32,7 @@ var quiz = [
                                 "Benjamin Franklin",
                                 "Abraham Lincoln"
                             ],
-        "correct"       :   "Thomas Jefferson",
+        "correct"       :   "0",
         "explanation"   :   "The two dollar bill is seldom seen in circulation. As a result, some businesses are confused when presented with the note.",
     },
     {
@@ -44,14 +44,14 @@ var quiz = [
                                 "American Civil War began",
                                 "Declaration of Independence"
                             ],
-        "correct"       :   "American Civil War began",
+        "correct"       :   "2",
         "explanation"   :   "South Carolina came under attack when Confederate soldiers attacked Fort Sumter. The war lasted until April 9th 1865.",
     },
 
 ];
 ```
 
-It's important that the correct answer match one of the choices _exactly_. 
+Correct is the index from list of 'choices'. Index starts from 0. 
 
 Images are optional, but you should keep the empty quotes. Every item must be proceeded by a comma except for the last item in a set.
 
@@ -66,7 +66,7 @@ To add an additional question, copy the entire curly bracket block:
                             "American Civil War began",
                             "Declaration of Independence"
                         ],
-    "correct"       :   "American Civil War began",
+    "correct"       :   "2",
     "explanation"   :   "South Carolina came under attack when Confederate soldiers attacked Fort Sumter. The war lasted until April 9th 1865.",
 },
 ```
