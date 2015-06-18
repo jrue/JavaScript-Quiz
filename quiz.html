@@ -36,7 +36,7 @@
                                     "Albert Einstein",
                                     "Ralph Waldo Emmerson"
                                 ],
-            "correct"       :   "Albert Einstein",
+            "correct"       :   "2",
             "explanation"   :   "Albert Einstein drafted the special theory of relativity in 1905.",
         },
         {
@@ -48,7 +48,7 @@
                                     "Benjamin Franklin",
                                     "Abraham Lincoln"
                                 ],
-            "correct"       :   "Thomas Jefferson",
+            "correct"       :   "0",
             "explanation"   :   "The two dollar bill is seldom seen in circulation. As a result, some businesses are confused when presented with the note.",
         },
         {
@@ -60,7 +60,7 @@
                                     "American Civil War began",
                                     "Declaration of Independence"
                                 ],
-            "correct"       :   "American Civil War began",
+            "correct"       :   "2",
             "explanation"   :   "South Carolina came under attack when Confederate soldiers attacked Fort Sumter. The war lasted until April 9th 1865.",
         },
 
@@ -121,7 +121,8 @@
          * @param {choice} number The li zero-based index of the choice picked
          */
         function processQuestion(choice){
-            if(quiz[currentquestion]['choices'][choice] == quiz[currentquestion]['correct']){
+            correctanswer = quiz[currentquestion]['correct'];
+            if(quiz[currentquestion]['choices'][choice] == quiz[currentquestion]['choices'][correctanswer]){
                 $('.choice').eq(choice).css({'background-color':'#50D943'});
                 $('#explanation').html('<strong>Correct!</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
                 score++;
