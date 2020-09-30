@@ -1,9 +1,9 @@
-JavaScript-Quiz
+JavaScript-Quiz App
 ===============
 
 **NOTE: NO LONGER MAINTAINED. PLEASE SEE [Bobby Black's Fork](https://github.com/BobbyBLACK/JavaScript_QUIZ) FOR UPDATED VERSION**
 
-A simple quiz template written in js/jquery and is responsively designed.
+A  quiz template written in javascript/jquery and is responsively designed.
 
 In the future, I will add a generator to add questions, etc.
 
